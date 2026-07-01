@@ -1,0 +1,735 @@
+[0m17:22:04.320105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A28CD940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001559F2EAC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A4A9BC50>]}
+
+
+============================== 17:22:04.328284 | 7297d6f5-c293-46cc-9c52-d1fcdc64afc5 ==============================
+[0m17:22:04.328284 [info ] [MainThread]: Running with dbt=1.11.11
+[0m17:22:04.329403 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --profiles-dir .', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Saket\\Downloads\\AtmoSync-updated\\AtmoSync-main\\dbt_atmosync\\logs'}
+[0m17:22:04.547998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A2DB5940>]}
+[0m17:22:04.641266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A4A878A0>]}
+[0m17:22:04.642978 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m17:22:05.012227 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m17:22:05.013507 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:22:05.014446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A4A96750>]}
+[0m17:22:06.436217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A38FBC50>]}
+[0m17:22:06.529950 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\manifest.json
+[0m17:22:06.542644 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\semantic_manifest.json
+[0m17:22:06.561810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A50A4590>]}
+[0m17:22:06.562430 [info ] [MainThread]: Found 3 models, 3 sources, 416 macros
+[0m17:22:06.563094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A4F92DD0>]}
+[0m17:22:06.565953 [info ] [MainThread]: 
+[0m17:22:06.566669 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:22:06.567266 [info ] [MainThread]: 
+[0m17:22:06.568104 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m17:22:06.575037 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_atmosync'
+[0m17:22:06.666527 [debug] [ThreadPool]: Using sqlite connection "list_atmosync"
+[0m17:22:06.667079 [debug] [ThreadPool]: On list_atmosync: BEGIN
+[0m17:22:06.667417 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:22:06.668702 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:22:06.669125 [debug] [ThreadPool]: Using sqlite connection "list_atmosync"
+[0m17:22:06.669449 [debug] [ThreadPool]: On list_atmosync: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_atmosync"} */
+
+        pragma database_list
+    
+[0m17:22:06.669800 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:22:06.671302 [debug] [ThreadPool]: On list_atmosync: ROLLBACK
+[0m17:22:06.671733 [debug] [ThreadPool]: On list_atmosync: Close
+[0m17:22:06.673656 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_atmosync_main'
+[0m17:22:06.682440 [debug] [ThreadPool]: Using sqlite connection "list_atmosync_main"
+[0m17:22:06.682872 [debug] [ThreadPool]: On list_atmosync_main: BEGIN
+[0m17:22:06.683190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:22:06.684133 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:22:06.684489 [debug] [ThreadPool]: Using sqlite connection "list_atmosync_main"
+[0m17:22:06.684776 [debug] [ThreadPool]: On list_atmosync_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_atmosync_main"} */
+
+        pragma database_list
+    
+[0m17:22:06.685078 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:22:06.686596 [debug] [ThreadPool]: Using sqlite connection "list_atmosync_main"
+[0m17:22:06.686985 [debug] [ThreadPool]: On list_atmosync_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_atmosync_main"} */
+
+            SELECT
+                'atmosync' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m17:22:06.697224 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m17:22:06.698909 [debug] [ThreadPool]: On list_atmosync_main: ROLLBACK
+[0m17:22:06.699359 [debug] [ThreadPool]: On list_atmosync_main: Close
+[0m17:22:06.701476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A5319FD0>]}
+[0m17:22:06.702019 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:22:06.702381 [debug] [MainThread]: On master: BEGIN
+[0m17:22:06.702711 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:22:06.703675 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:22:06.704043 [debug] [MainThread]: On master: COMMIT
+[0m17:22:06.704344 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:22:06.704884 [debug] [MainThread]: On master: COMMIT
+[0m17:22:06.705260 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:22:06.705586 [debug] [MainThread]: On master: Close
+[0m17:22:06.716133 [debug] [Thread-1 (]: Began running node model.atmosync.stg_sensor_data
+[0m17:22:06.716853 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_sensor_data ............................... [RUN]
+[0m17:22:06.717888 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.atmosync.stg_sensor_data'
+[0m17:22:06.718517 [debug] [Thread-1 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m17:22:06.730522 [debug] [Thread-1 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m17:22:06.734182 [debug] [Thread-1 (]: Began executing node model.atmosync.stg_sensor_data
+[0m17:22:06.752694 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:22:06.753209 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */
+drop view if exists "main"."stg_sensor_data"
+[0m17:22:06.753686 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:22:06.771233 [debug] [Thread-1 (]: SQL status: OK in 0.017 seconds
+[0m17:22:06.777220 [debug] [Thread-1 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m17:22:06.780813 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:22:06.781285 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: BEGIN
+[0m17:22:06.781690 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:22:06.782072 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:22:06.782457 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */
+
+    
+    create view main."stg_sensor_data" as
+    -- Staging layer: light cleaning/typing over the raw Kafka -> SQLite stream.
+-- No business logic here, just standardize types and drop obviously
+-- malformed rows that slipped past scripts/validator.py historically.
+
+select
+    id,
+    container_id,
+    cast(temperature as real)  as temperature_c,
+    cast(humidity as real)     as humidity_pct,
+    cast(vibration as real)    as vibration_level,
+    cast(battery as integer)   as battery_pct,
+    cast(latitude as real)     as latitude,
+    cast(longitude as real)    as longitude,
+    upper(trim(door_status))   as door_status,
+    upper(trim(spoilage_risk)) as spoilage_risk_flag,
+    timestamp                  as event_timestamp
+from main."sensor_data"
+where container_id is not null
+  and temperature is not null;
+[0m17:22:06.784210 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m17:22:06.790982 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: COMMIT
+[0m17:22:06.791488 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:22:06.791910 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: COMMIT
+[0m17:22:06.801547 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m17:22:06.805394 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: Close
+[0m17:22:06.808150 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A55F4B50>]}
+[0m17:22:06.808969 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main.stg_sensor_data .......................... [[32mOK[0m in 0.09s]
+[0m17:22:06.810070 [debug] [Thread-1 (]: Finished running node model.atmosync.stg_sensor_data
+[0m17:22:06.811112 [debug] [Thread-1 (]: Began running node model.atmosync.spoilage_degradation
+[0m17:22:06.812035 [info ] [Thread-1 (]: 2 of 3 START sql table model main.spoilage_degradation ......................... [RUN]
+[0m17:22:06.812824 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.spoilage_degradation)
+[0m17:22:06.813340 [debug] [Thread-1 (]: Began compiling node model.atmosync.spoilage_degradation
+[0m17:22:06.818494 [debug] [Thread-1 (]: Writing injected SQL for node "model.atmosync.spoilage_degradation"
+[0m17:22:06.820497 [debug] [Thread-1 (]: Began executing node model.atmosync.spoilage_degradation
+[0m17:22:06.831628 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:22:06.832098 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_degradation"} */
+drop table if exists "main"."spoilage_degradation"
+[0m17:22:06.832491 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:22:06.849405 [debug] [Thread-1 (]: SQL status: OK in 0.017 seconds
+[0m17:22:06.856479 [debug] [Thread-1 (]: Writing runtime sql for node "model.atmosync.spoilage_degradation"
+[0m17:22:06.858714 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:22:06.859186 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: BEGIN
+[0m17:22:06.859589 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:22:06.859937 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:22:06.860427 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_degradation"} */
+
+  
+    
+    
+    create  table main."spoilage_degradation"
+    as
+        -- Spoilage Degradation Curve
+--
+-- Models cumulative quality loss per container as a function of time spent
+-- outside the ideal storage band for avocados (4C - 7C). Each reading adds
+-- an incremental degradation amount; readings further outside the ideal
+-- range degrade quality faster (non-linear curve), and humidity/vibration
+-- spikes add a smaller secondary penalty.
+--
+-- This is a simplified physical model for demo purposes, not a calibrated
+-- food-science formula -- swap PARAMS below for real spoilage-rate
+-- coefficients if you have them.
+
+with params as (
+    select
+        4.0  as ideal_temp_low,
+        7.0  as ideal_temp_high,
+        0.4  as base_decay_pct_per_reading,   -- decay even inside ideal range (normal ripening)
+        0.9  as temp_penalty_multiplier,      -- extra decay per degree outside ideal band
+        0.05 as humidity_penalty_multiplier,  -- extra decay per % humidity above 85
+        0.15 as vibration_penalty_multiplier  -- extra decay per unit vibration above 3
+
+),
+
+readings as (
+    select
+        s.*,
+        row_number() over (
+            partition by s.container_id
+            order by s.event_timestamp
+        ) as reading_seq
+    from main."stg_sensor_data" s
+),
+
+decay_per_reading as (
+    select
+        r.*,
+        p.base_decay_pct_per_reading
+            + (max(0.0, p.ideal_temp_low - r.temperature_c) * p.temp_penalty_multiplier)
+            + (max(0.0, r.temperature_c - p.ideal_temp_high) * p.temp_penalty_multiplier)
+            + (max(0.0, r.humidity_pct - 85) * p.humidity_penalty_multiplier)
+            + (max(0.0, r.vibration_level - 3) * p.vibration_penalty_multiplier)
+            as decay_pct
+    from readings r
+    cross join params p
+),
+
+cumulative as (
+    select
+        *,
+        sum(decay_pct) over (
+            partition by container_id
+            order by reading_seq
+            rows between unbounded preceding and current row
+        ) as cumulative_decay_pct
+    from decay_per_reading
+)
+
+select
+    id,
+    container_id,
+    reading_seq,
+    temperature_c,
+    humidity_pct,
+    vibration_level,
+    door_status,
+    spoilage_risk_flag,
+    event_timestamp,
+    round(decay_pct, 3)            as decay_pct_this_reading,
+    round(cumulative_decay_pct, 2) as cumulative_decay_pct,
+    round(
+        max(0.0, 100.0 - cumulative_decay_pct), 2
+    ) as quality_remaining_pct,
+    case
+        when (100.0 - cumulative_decay_pct) >= 70 then 'GOOD'
+        when (100.0 - cumulative_decay_pct) >= 40 then 'DEGRADING'
+        else 'CRITICAL'
+    end as quality_tier
+from cumulative
+
+  
+[0m17:22:06.863287 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:22:06.864740 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: COMMIT
+[0m17:22:06.865198 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:22:06.865621 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: COMMIT
+[0m17:22:06.873746 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m17:22:06.874713 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: Close
+[0m17:22:06.875730 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A5735090>]}
+[0m17:22:06.876654 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main.spoilage_degradation .................... [[32mOK[0m in 0.06s]
+[0m17:22:06.877724 [debug] [Thread-1 (]: Finished running node model.atmosync.spoilage_degradation
+[0m17:22:06.878744 [debug] [Thread-1 (]: Began running node model.atmosync.spoilage_arbitrage
+[0m17:22:06.879427 [info ] [Thread-1 (]: 3 of 3 START sql table model main.spoilage_arbitrage ........................... [RUN]
+[0m17:22:06.880217 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.atmosync.spoilage_degradation, now model.atmosync.spoilage_arbitrage)
+[0m17:22:06.880708 [debug] [Thread-1 (]: Began compiling node model.atmosync.spoilage_arbitrage
+[0m17:22:06.885111 [debug] [Thread-1 (]: Writing injected SQL for node "model.atmosync.spoilage_arbitrage"
+[0m17:22:06.886868 [debug] [Thread-1 (]: Began executing node model.atmosync.spoilage_arbitrage
+[0m17:22:06.891471 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:22:06.891964 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_arbitrage"} */
+drop table if exists "main"."spoilage_arbitrage"
+[0m17:22:06.892346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:22:06.906803 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m17:22:06.908408 [debug] [Thread-1 (]: Writing runtime sql for node "model.atmosync.spoilage_arbitrage"
+[0m17:22:06.909945 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:22:06.910631 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: BEGIN
+[0m17:22:06.911081 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:22:06.911463 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:22:06.911911 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_arbitrage"} */
+
+  
+    
+    
+    create  table main."spoilage_arbitrage"
+    as
+        -- Spoilage Arbitrage
+--
+-- For each container's LATEST reading, compares price across every
+-- candidate market and computes a "net arbitrage value": the price
+-- advantage of rerouting, discounted by how much quality has already been
+-- lost (a half-spoiled shipment doesn't capture full premium pricing even
+-- at a higher-priced market).
+--
+-- This is the table the trader-facing dashboard (Superset) reads from --
+-- it directly answers "which container should I reroute, and where?"
+
+with ranked_readings as (
+    select
+        *,
+        row_number() over (
+            partition by container_id
+            order by reading_seq desc
+        ) as rn
+    from main."spoilage_degradation"
+),
+
+latest_reading as (
+    select *
+    from ranked_readings
+    where rn = 1
+),
+
+-- avocado is the only commodity simulated today; hardcode the join key
+-- here so this model still works on sqlite without a commodity column on
+-- sensor_data. Swap for a real join key once multiple commodities exist.
+priced as (
+    select
+        lr.*,
+        cp.market_id,
+        m.market_name,
+        cp.price_per_kg
+    from latest_reading lr
+    cross join main."commodity_prices" cp
+    join main."markets" m
+        on m.market_id = cp.market_id
+    where cp.commodity = 'AVOCADO'
+),
+
+primary_price as (
+    select price_per_kg as primary_price_per_kg
+    from priced
+    where market_id = 'MKT-PRIMARY'
+    limit 1
+)
+
+select
+    p.container_id,
+    p.event_timestamp        as last_reading_at,
+    p.temperature_c,
+    p.quality_remaining_pct,
+    p.quality_tier,
+    p.market_id,
+    p.market_name,
+    p.price_per_kg,
+    pp.primary_price_per_kg,
+    round(p.price_per_kg - pp.primary_price_per_kg, 2) as price_advantage_per_kg,
+    round(
+        (p.price_per_kg - pp.primary_price_per_kg) * (p.quality_remaining_pct / 100.0),
+        2
+    ) as net_arbitrage_value_per_kg,
+    case
+        when p.market_id != 'MKT-PRIMARY'
+             and (p.price_per_kg - pp.primary_price_per_kg) * (p.quality_remaining_pct / 100.0) > 5
+             and p.quality_tier != 'CRITICAL'
+        then 1 else 0
+    end as reroute_recommended
+from priced p
+cross join primary_price pp
+order by p.container_id, net_arbitrage_value_per_kg desc
+
+  
+[0m17:22:06.914983 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m17:22:06.916424 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: COMMIT
+[0m17:22:06.916906 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:22:06.917351 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: COMMIT
+[0m17:22:06.930894 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m17:22:06.931897 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: Close
+[0m17:22:06.932721 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7297d6f5-c293-46cc-9c52-d1fcdc64afc5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A5649750>]}
+[0m17:22:06.933463 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main.spoilage_arbitrage ...................... [[32mOK[0m in 0.05s]
+[0m17:22:06.934510 [debug] [Thread-1 (]: Finished running node model.atmosync.spoilage_arbitrage
+[0m17:22:06.936151 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:22:06.936564 [debug] [MainThread]: On master: BEGIN
+[0m17:22:06.936879 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:22:06.938032 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:22:06.938449 [debug] [MainThread]: On master: COMMIT
+[0m17:22:06.938925 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:22:06.939323 [debug] [MainThread]: On master: COMMIT
+[0m17:22:06.939741 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:22:06.940069 [debug] [MainThread]: On master: Close
+[0m17:22:06.940634 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:22:06.941038 [debug] [MainThread]: Connection 'list_atmosync' was properly closed.
+[0m17:22:06.941335 [debug] [MainThread]: Connection 'list_atmosync_main' was properly closed.
+[0m17:22:06.941610 [debug] [MainThread]: Connection 'model.atmosync.spoilage_arbitrage' was properly closed.
+[0m17:22:06.942005 [info ] [MainThread]: 
+[0m17:22:06.942688 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.37 seconds (0.37s).
+[0m17:22:06.944227 [debug] [MainThread]: Command end result
+[0m17:22:06.971397 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\manifest.json
+[0m17:22:06.974620 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\semantic_manifest.json
+[0m17:22:06.983374 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\run_results.json
+[0m17:22:06.983849 [info ] [MainThread]: 
+[0m17:22:06.984484 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:22:06.985133 [info ] [MainThread]: 
+[0m17:22:06.985725 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:22:06.987114 [debug] [MainThread]: Command `dbt run` succeeded at 17:22:06.986895 after 2.85 seconds
+[0m17:22:06.987577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A4AFA9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001559D0CD860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000155A5697FB0>]}
+[0m17:22:06.988443 [debug] [MainThread]: Flushing usage events
+[0m17:22:08.518129 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:24:24.777045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EABFB1D940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EABC55AC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC1CAFC50>]}
+
+
+============================== 17:24:24.782895 | 7e5b967f-e5bb-4ddb-afaf-d7770e0675aa ==============================
+[0m17:24:24.782895 [info ] [MainThread]: Running with dbt=1.11.11
+[0m17:24:24.784181 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --profiles-dir .', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Saket\\Downloads\\AtmoSync-updated\\AtmoSync-main\\dbt_atmosync\\logs'}
+[0m17:24:24.986480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC0005940>]}
+[0m17:24:25.081176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC1CBBBD0>]}
+[0m17:24:25.082604 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m17:24:25.435291 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m17:24:25.600735 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:24:25.601269 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:24:25.601589 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:24:25.649626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC2228850>]}
+[0m17:24:25.743916 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\manifest.json
+[0m17:24:25.746963 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\semantic_manifest.json
+[0m17:24:25.760981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC0A5EE40>]}
+[0m17:24:25.761531 [info ] [MainThread]: Found 3 models, 3 sources, 416 macros
+[0m17:24:25.762255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC22ECE50>]}
+[0m17:24:25.764595 [info ] [MainThread]: 
+[0m17:24:25.765196 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:24:25.765982 [info ] [MainThread]: 
+[0m17:24:25.766874 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m17:24:25.774133 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_atmosync'
+[0m17:24:25.917198 [debug] [ThreadPool]: Using sqlite connection "list_atmosync"
+[0m17:24:25.917677 [debug] [ThreadPool]: On list_atmosync: BEGIN
+[0m17:24:25.918005 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:24:25.919286 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:24:25.919709 [debug] [ThreadPool]: Using sqlite connection "list_atmosync"
+[0m17:24:25.920035 [debug] [ThreadPool]: On list_atmosync: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_atmosync"} */
+
+        pragma database_list
+    
+[0m17:24:25.920387 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:24:25.921882 [debug] [ThreadPool]: On list_atmosync: ROLLBACK
+[0m17:24:25.922311 [debug] [ThreadPool]: On list_atmosync: Close
+[0m17:24:25.924204 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_atmosync_main'
+[0m17:24:25.932889 [debug] [ThreadPool]: Using sqlite connection "list_atmosync_main"
+[0m17:24:25.933326 [debug] [ThreadPool]: On list_atmosync_main: BEGIN
+[0m17:24:25.933674 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:24:25.934672 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:24:25.935112 [debug] [ThreadPool]: Using sqlite connection "list_atmosync_main"
+[0m17:24:25.935414 [debug] [ThreadPool]: On list_atmosync_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_atmosync_main"} */
+
+        pragma database_list
+    
+[0m17:24:25.935719 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:24:25.937222 [debug] [ThreadPool]: Using sqlite connection "list_atmosync_main"
+[0m17:24:25.937616 [debug] [ThreadPool]: On list_atmosync_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "connection_name": "list_atmosync_main"} */
+
+            SELECT
+                'atmosync' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m17:24:25.938528 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:24:25.940032 [debug] [ThreadPool]: On list_atmosync_main: ROLLBACK
+[0m17:24:25.940433 [debug] [ThreadPool]: On list_atmosync_main: Close
+[0m17:24:25.942580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC2521A50>]}
+[0m17:24:25.943215 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:24:25.943552 [debug] [MainThread]: On master: BEGIN
+[0m17:24:25.943837 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:24:25.944734 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:24:25.945124 [debug] [MainThread]: On master: COMMIT
+[0m17:24:25.945443 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:24:25.945722 [debug] [MainThread]: On master: COMMIT
+[0m17:24:25.946005 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:24:25.946311 [debug] [MainThread]: On master: Close
+[0m17:24:25.951323 [debug] [Thread-1 (]: Began running node model.atmosync.stg_sensor_data
+[0m17:24:25.951963 [info ] [Thread-1 (]: 1 of 3 START sql view model main.stg_sensor_data ............................... [RUN]
+[0m17:24:25.953131 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.atmosync.stg_sensor_data'
+[0m17:24:25.953705 [debug] [Thread-1 (]: Began compiling node model.atmosync.stg_sensor_data
+[0m17:24:25.964586 [debug] [Thread-1 (]: Writing injected SQL for node "model.atmosync.stg_sensor_data"
+[0m17:24:25.965947 [debug] [Thread-1 (]: Began executing node model.atmosync.stg_sensor_data
+[0m17:24:25.986015 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:24:25.986550 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */
+drop view if exists "main"."stg_sensor_data"
+[0m17:24:25.986939 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:24:26.007117 [debug] [Thread-1 (]: SQL status: OK in 0.020 seconds
+[0m17:24:26.013353 [debug] [Thread-1 (]: Writing runtime sql for node "model.atmosync.stg_sensor_data"
+[0m17:24:26.014844 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:24:26.015332 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: BEGIN
+[0m17:24:26.015769 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:26.016171 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:24:26.016624 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.stg_sensor_data"} */
+
+    
+    create view main."stg_sensor_data" as
+    -- Staging layer: light cleaning/typing over the raw Kafka -> SQLite stream.
+-- No business logic here, just standardize types and drop obviously
+-- malformed rows that slipped past scripts/validator.py historically.
+
+select
+    id,
+    container_id,
+    cast(temperature as real)  as temperature_c,
+    cast(humidity as real)     as humidity_pct,
+    cast(vibration as real)    as vibration_level,
+    cast(battery as integer)   as battery_pct,
+    cast(latitude as real)     as latitude,
+    cast(longitude as real)    as longitude,
+    upper(trim(door_status))   as door_status,
+    upper(trim(spoilage_risk)) as spoilage_risk_flag,
+    timestamp                  as event_timestamp
+from main."sensor_data"
+where container_id is not null
+  and temperature is not null;
+[0m17:24:26.018626 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:26.026265 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: COMMIT
+[0m17:24:26.026807 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.stg_sensor_data"
+[0m17:24:26.027236 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: COMMIT
+[0m17:24:26.036083 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m17:24:26.040531 [debug] [Thread-1 (]: On model.atmosync.stg_sensor_data: Close
+[0m17:24:26.043168 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC21D2810>]}
+[0m17:24:26.044044 [info ] [Thread-1 (]: 1 of 3 OK created sql view model main.stg_sensor_data .......................... [[32mOK[0m in 0.09s]
+[0m17:24:26.045407 [debug] [Thread-1 (]: Finished running node model.atmosync.stg_sensor_data
+[0m17:24:26.046478 [debug] [Thread-1 (]: Began running node model.atmosync.spoilage_degradation
+[0m17:24:26.047139 [info ] [Thread-1 (]: 2 of 3 START sql table model main.spoilage_degradation ......................... [RUN]
+[0m17:24:26.048114 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.atmosync.stg_sensor_data, now model.atmosync.spoilage_degradation)
+[0m17:24:26.048647 [debug] [Thread-1 (]: Began compiling node model.atmosync.spoilage_degradation
+[0m17:24:26.055091 [debug] [Thread-1 (]: Writing injected SQL for node "model.atmosync.spoilage_degradation"
+[0m17:24:26.056852 [debug] [Thread-1 (]: Began executing node model.atmosync.spoilage_degradation
+[0m17:24:26.069965 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:24:26.070520 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_degradation"} */
+drop table if exists "main"."spoilage_degradation"
+[0m17:24:26.070959 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:26.082239 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m17:24:26.090393 [debug] [Thread-1 (]: Writing runtime sql for node "model.atmosync.spoilage_degradation"
+[0m17:24:26.091820 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:24:26.092339 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: BEGIN
+[0m17:24:26.092765 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:26.093138 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:24:26.094021 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_degradation"} */
+
+  
+    
+    
+    create  table main."spoilage_degradation"
+    as
+        -- Spoilage Degradation Curve
+--
+-- Models cumulative quality loss per container as a function of time spent
+-- outside the ideal storage band for avocados (4C - 7C). Each reading adds
+-- an incremental degradation amount; readings further outside the ideal
+-- range degrade quality faster (non-linear curve), and humidity/vibration
+-- spikes add a smaller secondary penalty.
+--
+-- This is a simplified physical model for demo purposes, not a calibrated
+-- food-science formula -- swap PARAMS below for real spoilage-rate
+-- coefficients if you have them.
+
+with params as (
+    select
+        4.0  as ideal_temp_low,
+        7.0  as ideal_temp_high,
+        0.4  as base_decay_pct_per_reading,   -- decay even inside ideal range (normal ripening)
+        0.9  as temp_penalty_multiplier,      -- extra decay per degree outside ideal band
+        0.05 as humidity_penalty_multiplier,  -- extra decay per % humidity above 85
+        0.15 as vibration_penalty_multiplier  -- extra decay per unit vibration above 3
+
+),
+
+readings as (
+    select
+        s.*,
+        row_number() over (
+            partition by s.container_id
+            order by s.event_timestamp
+        ) as reading_seq
+    from main."stg_sensor_data" s
+),
+
+decay_per_reading as (
+    select
+        r.*,
+        p.base_decay_pct_per_reading
+            + (max(0.0, p.ideal_temp_low - r.temperature_c) * p.temp_penalty_multiplier)
+            + (max(0.0, r.temperature_c - p.ideal_temp_high) * p.temp_penalty_multiplier)
+            + (max(0.0, r.humidity_pct - 85) * p.humidity_penalty_multiplier)
+            + (max(0.0, r.vibration_level - 3) * p.vibration_penalty_multiplier)
+            as decay_pct
+    from readings r
+    cross join params p
+),
+
+cumulative as (
+    select
+        *,
+        sum(decay_pct) over (
+            partition by container_id
+            order by reading_seq
+            rows between unbounded preceding and current row
+        ) as cumulative_decay_pct
+    from decay_per_reading
+)
+
+select
+    id,
+    container_id,
+    reading_seq,
+    temperature_c,
+    humidity_pct,
+    vibration_level,
+    door_status,
+    spoilage_risk_flag,
+    event_timestamp,
+    round(decay_pct, 3)            as decay_pct_this_reading,
+    round(cumulative_decay_pct, 2) as cumulative_decay_pct,
+    round(
+        max(0.0, 100.0 - cumulative_decay_pct), 2
+    ) as quality_remaining_pct,
+    case
+        when (100.0 - cumulative_decay_pct) >= 70 then 'GOOD'
+        when (100.0 - cumulative_decay_pct) >= 40 then 'DEGRADING'
+        else 'CRITICAL'
+    end as quality_tier
+from cumulative
+
+  
+[0m17:24:26.097188 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m17:24:26.098779 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: COMMIT
+[0m17:24:26.099254 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_degradation"
+[0m17:24:26.099729 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: COMMIT
+[0m17:24:26.108465 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m17:24:26.109764 [debug] [Thread-1 (]: On model.atmosync.spoilage_degradation: Close
+[0m17:24:26.110748 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC2335700>]}
+[0m17:24:26.111682 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main.spoilage_degradation .................... [[32mOK[0m in 0.06s]
+[0m17:24:26.113109 [debug] [Thread-1 (]: Finished running node model.atmosync.spoilage_degradation
+[0m17:24:26.114460 [debug] [Thread-1 (]: Began running node model.atmosync.spoilage_arbitrage
+[0m17:24:26.115351 [info ] [Thread-1 (]: 3 of 3 START sql table model main.spoilage_arbitrage ........................... [RUN]
+[0m17:24:26.116389 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.atmosync.spoilage_degradation, now model.atmosync.spoilage_arbitrage)
+[0m17:24:26.116952 [debug] [Thread-1 (]: Began compiling node model.atmosync.spoilage_arbitrage
+[0m17:24:26.122321 [debug] [Thread-1 (]: Writing injected SQL for node "model.atmosync.spoilage_arbitrage"
+[0m17:24:26.124250 [debug] [Thread-1 (]: Began executing node model.atmosync.spoilage_arbitrage
+[0m17:24:26.129565 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:24:26.130090 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_arbitrage"} */
+drop table if exists "main"."spoilage_arbitrage"
+[0m17:24:26.130516 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:24:26.142062 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m17:24:26.144069 [debug] [Thread-1 (]: Writing runtime sql for node "model.atmosync.spoilage_arbitrage"
+[0m17:24:26.145924 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:24:26.146454 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: BEGIN
+[0m17:24:26.146905 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:24:26.147321 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:24:26.148215 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "atmosync", "target_name": "dev", "node_id": "model.atmosync.spoilage_arbitrage"} */
+
+  
+    
+    
+    create  table main."spoilage_arbitrage"
+    as
+        -- Spoilage Arbitrage
+--
+-- For each container's LATEST reading, compares price across every
+-- candidate market and computes a "net arbitrage value": the price
+-- advantage of rerouting, discounted by how much quality has already been
+-- lost (a half-spoiled shipment doesn't capture full premium pricing even
+-- at a higher-priced market).
+--
+-- This is the table the trader-facing dashboard (Superset) reads from --
+-- it directly answers "which container should I reroute, and where?"
+
+with ranked_readings as (
+    select
+        *,
+        row_number() over (
+            partition by container_id
+            order by reading_seq desc
+        ) as rn
+    from main."spoilage_degradation"
+),
+
+latest_reading as (
+    select *
+    from ranked_readings
+    where rn = 1
+),
+
+-- avocado is the only commodity simulated today; hardcode the join key
+-- here so this model still works on sqlite without a commodity column on
+-- sensor_data. Swap for a real join key once multiple commodities exist.
+priced as (
+    select
+        lr.*,
+        cp.market_id,
+        m.market_name,
+        cp.price_per_kg
+    from latest_reading lr
+    cross join main."commodity_prices" cp
+    join main."markets" m
+        on m.market_id = cp.market_id
+    where cp.commodity = 'AVOCADO'
+),
+
+primary_price as (
+    select price_per_kg as primary_price_per_kg
+    from priced
+    where market_id = 'MKT-PRIMARY'
+    limit 1
+)
+
+select
+    p.container_id,
+    p.event_timestamp        as last_reading_at,
+    p.temperature_c,
+    p.quality_remaining_pct,
+    p.quality_tier,
+    p.market_id,
+    p.market_name,
+    p.price_per_kg,
+    pp.primary_price_per_kg,
+    round(p.price_per_kg - pp.primary_price_per_kg, 2) as price_advantage_per_kg,
+    round(
+        (p.price_per_kg - pp.primary_price_per_kg) * (p.quality_remaining_pct / 100.0),
+        2
+    ) as net_arbitrage_value_per_kg,
+    case
+        when p.market_id != 'MKT-PRIMARY'
+             and (p.price_per_kg - pp.primary_price_per_kg) * (p.quality_remaining_pct / 100.0) > 5
+             and p.quality_tier != 'CRITICAL'
+        then 1 else 0
+    end as reroute_recommended
+from priced p
+cross join primary_price pp
+order by p.container_id, net_arbitrage_value_per_kg desc
+
+  
+[0m17:24:26.151524 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m17:24:26.153338 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: COMMIT
+[0m17:24:26.153873 [debug] [Thread-1 (]: Using sqlite connection "model.atmosync.spoilage_arbitrage"
+[0m17:24:26.154497 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: COMMIT
+[0m17:24:26.163868 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m17:24:26.164999 [debug] [Thread-1 (]: On model.atmosync.spoilage_arbitrage: Close
+[0m17:24:26.165908 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7e5b967f-e5bb-4ddb-afaf-d7770e0675aa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC1D09770>]}
+[0m17:24:26.166730 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main.spoilage_arbitrage ...................... [[32mOK[0m in 0.05s]
+[0m17:24:26.167993 [debug] [Thread-1 (]: Finished running node model.atmosync.spoilage_arbitrage
+[0m17:24:26.170314 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:24:26.170909 [debug] [MainThread]: On master: BEGIN
+[0m17:24:26.171429 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:24:26.172569 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m17:24:26.172977 [debug] [MainThread]: On master: COMMIT
+[0m17:24:26.173314 [debug] [MainThread]: Using sqlite connection "master"
+[0m17:24:26.173624 [debug] [MainThread]: On master: COMMIT
+[0m17:24:26.173967 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:24:26.174272 [debug] [MainThread]: On master: Close
+[0m17:24:26.174738 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:24:26.175034 [debug] [MainThread]: Connection 'list_atmosync' was properly closed.
+[0m17:24:26.175320 [debug] [MainThread]: Connection 'list_atmosync_main' was properly closed.
+[0m17:24:26.175563 [debug] [MainThread]: Connection 'model.atmosync.spoilage_arbitrage' was properly closed.
+[0m17:24:26.175920 [info ] [MainThread]: 
+[0m17:24:26.176673 [info ] [MainThread]: Finished running 2 table models, 1 view model in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m17:24:26.178346 [debug] [MainThread]: Command end result
+[0m17:24:26.210099 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\manifest.json
+[0m17:24:26.213299 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\semantic_manifest.json
+[0m17:24:26.221357 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Saket\Downloads\AtmoSync-updated\AtmoSync-main\dbt_atmosync\target\run_results.json
+[0m17:24:26.221811 [info ] [MainThread]: 
+[0m17:24:26.222658 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:24:26.223383 [info ] [MainThread]: 
+[0m17:24:26.224015 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:24:26.225538 [debug] [MainThread]: Command `dbt run` succeeded at 17:24:26.225361 after 1.64 seconds
+[0m17:24:26.225987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC2220050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC2122450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EAC1D46900>]}
+[0m17:24:26.226425 [debug] [MainThread]: Flushing usage events
+[0m17:24:28.087921 [debug] [MainThread]: An error was encountered while trying to flush usage events
